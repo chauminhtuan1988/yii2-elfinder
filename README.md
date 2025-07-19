@@ -3,7 +3,7 @@ ElFinder pаckage for Yii 2
 
 ElFinder — file manager for website.
 
-## Поддерживаемые хранилища
+## Supported storages
 
 mihaildev/yii2-elfinder-flysystem - https://github.com/MihailDev/yii2-elfinder-flysystem/
 
