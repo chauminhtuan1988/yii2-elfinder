@@ -43,7 +43,7 @@ or add
 "mihaildev/yii2-elfinder": "*"
 ```
 
-в разделе `require` вашего composer.json файла.
+in the section `require` yours composer.json file.
 
 ## Setting
 
@@ -67,7 +67,7 @@ or add
                 ],
                 [
                     'path' => 'files/some',
-                    'name' => ['category' => 'my','message' => 'Some Name'] //перевод Yii::t($category, $message)
+                    'name' => ['category' => 'my','message' => 'Some Name'] //translation Yii::t($category, $message)
                 ],
                 [
                     'path'   => 'files/some',
@@ -260,12 +260,12 @@ echo InputFile::widget([
 echo $form->field($model, 'attribute')->widget(InputFile::className(), [
     'language'      => 'vi',
     'controller'    => 'elfinder', // insert the name of the controller, by default it is elfinder
-    'path' => 'image', // будет открыта папка из настроек контроллера с добавлением указанной под деритории 
-    'filter'        => 'image',    // фильтр файлов, можно задать массив фильтров https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
+    'path' => 'image', // the folder from the controller settings will be opened with the specified subdirectory added
+    'filter'        => 'image',    // file filter, you can specify an array of filters https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
     'template'      => '<div class="input-group">{input}<span class="input-group-btn">{button}</span></div>',
     'options'       => ['class' => 'form-control'],
     'buttonOptions' => ['class' => 'btn btn-default'],
-    'multiple'      => false       // возможность выбора нескольких файлов
+    'multiple'      => false       // ability to select multiple files
 ]);
 
 echo ElFinder::widget([
